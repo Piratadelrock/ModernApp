@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario con opciones de selección</title>
+    <style>
+      /* Estilos para el formulario */
+      form {
+        max-width: 500px;
+        margin: auto;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Estilos para los campos de formulario */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      select {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      /* Estilo para resaltar el campo activo */
+      select:focus {
+        border-color: #0066cc;
+        box-shadow: 0 0 5px #0066cc;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="typeDoc">Tipo de documento:</label>
+      <select name="idtype" id="typeDoc">
+        <option value="">Seleccione una opción</option>
+        <option value="cc">Cédula de ciudadanía</option>
+        <option value="ti">Tarjeta de identidad</option>
+        <option value="ce">Cédula de extranjería</option>
+      </select>
+
+      <label for="country">País:</label>
+      <select name="country" id="country">
+        <option value="">Seleccione una opción</option>
+        <option value="colombia">Colombia</option>
+        <option value="argentina">Argentina</option>
+        <option value="brasil">Brasil</option>
+      </select>
+
+      <label for="city">Ciudad:</label>
+      <select name="city" id="city">
+        <option value="">Seleccione una opción</option>
+        <option value="bogota">Bogotá</option>
+        <option value="medellin">Medellín</option>
+        <option value="cali">Cali</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

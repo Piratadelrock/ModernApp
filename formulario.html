@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario de datos
+    </title>
+
+    <style>
+        body {
+            background-color: #252525;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>INFORMACION PERSONAL</legend>
+            <table border="1">
+                <tr>
+                    <th>
+                        <label for="typeDoc">Tipo identificación</label><br>
+                    </th>
+                    <td>
+                        <select name="idTypeDoc" id="typeDoc" tabindex="1">
+                            <option value="" selected="selected">Seleccione una opcion...</option>
+                            <option value="NUIP">NUIP</option>
+                            <option value="RC">Registro Civil</option>
+                            <option value="TI">Tarjeta identidada</option>
+                            <option value="CC">Cédula</option>
+                            <option value="P">Pasaporte</option>
+                            <option value="CE">Cédula Extranjeria</option>
+                        </select><br>
+                    </td>
+                    <th><label for="numberDoc">Identificacion</label><br></th>
+                    <td><input tabindex="3" type="number" id="numberDoc" maxlength="20"><br></td>
+                    <th><label for="birthDate">Fecha nacimiento</label></th>
+                    <td colspan="3"><input type="date" id="birthDate"><br></td>
+                </tr>
+                <tr>
+                    <th><label for="firstName">Primer nombre</label><br></th>
+                    <td><input type="text" id="firstName"><br></td>
+                    <th><label for="secName">Segundo nombre</label><br></th>
+                    <td><input type="text" id="secName"><br></td>
+
+                    <th><label for="surName">Primer apellido</label><br></th>
+                    <td><input type="text" id="surName"><br></td>
+                    <th><label for="secSurName">Segundo apellido</label><br></th>
+                    <td><input type="text" id="secSurName"><br></td>
+                </tr>
+                <tr>
+                    <th><label for="paisResidencia">Pais residencia:</label><br></th>
+                    <td>
+                        <select id="paisResidencia" name="paisResidencia">
+                            <option value="" selected="select">Seleccione una opcion</option>
+                            <option value="1">Colombia</option>
+                            <option value="2">Argentina</option>
+                            <option value="3">Ecuador</option>
+                        </select><br>
+                    </td>
+                    <th><label for="departamentoResidencia">Departamento residencia:</label><br></th>
+                    <td>
+                        <select id="departamentoResidencia">
+                            <option value="" selected="select">Seleccione una opcion</option>
+                            <option value="1">Antioquia</option>
+                            <option value="2">Cundinamarica</option>
+                            <option value="3">Guajira</option>
+                        </select><br>
+                    </td>
+                    <th><label for="ciudadResidencia">Ciudad residencia:</label><br></th>
+                    <td colspan="3">
+                        <select id="ciudadResidencia">
+                            <option value="" selected="select">Seleccione una opcion</option>
+                            <option value="1">Rionegro</option>
+                            <option value="2">Medellin</option>
+                            <option value="3">La ceja</option>
+                            <option value="4">Peñol</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="RH">RH:</label><br></th>
+                    <td>
+                        <select id="RH">
+                            <option value="" selected="select">Seleccione una opcion</option>
+                            <option value="1">O+</option>
+                            <option value="2">O-</option>
+                            <option value="3">A+</option>
+                            <option value="4">A-</option>
+                            <option value="4">AB+</option>
+                            <option value="4">AB-</option>
+                        </select><br>
+                    </td>
+                    <th><label for="foto">Foto:</label><br></th>
+                    <td colspan="5"><input type="file" id="foto"><br></td>
+                </tr>
+            </table>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>INFORMACIÓn DE CONTACTO</legend>
+            <table border="1">
+                <tr>
+                    <th><label for="numeroTelefono">Número telefono: </label></th>
+                    <td><input type="number" id="numeroTelefono" maxlength="20"></td>
+                    <th><label for="correoElectronico">Correo electronico:</label></th>
+                    <td><input type="email" id="correoElectronico"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>GUSTOS MUSICALES</legend>
+            <table border="1">
+                <tr>
+                    <th><label for="gustosMusicales">Gustos musicales</label></th>
+                    <td>
+                        <select id="gustosMusicales" multiple>
+                            <option value="0" selected="select">Seleccione una opcion</option>
+                            <option value="1">Pop</option>
+                            <option value="2">Rock</option>
+                            <option value="3">Instrumental</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>PRESENTACION PERSONAL</legend>
+            <table colspan="5" border="1">
+                <tr>
+                    <th><label for="videoPersona">Video Presentacion</label></th>
+                    <td><input id="videoPersona" type="file"></td>
+                </tr>
+
+                <tr>
+                    <th><label for="perfilPersona">Perfil:</label></th>
+                    <td><textarea tabindex="2" id="perfilPersona" cols="50" rows="10"></textarea></td>
+                </tr>
+
+            </table>
+
+
+        </fieldset>
+
+        <input type="reset" value="Limpiar todo">
+    </form>
+
+    <fieldset>
+        <legend>VIDEO FAVORITOS</legend>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4"> Mis Videos favoritos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><a href="https://www.youtube.com/embed/hAnv1NEE7j8" target="contenido">Video 1</a></td>
+                <td><a href="https://www.youtube.com/embed/Hflc4dyfQqo" target="contenido">Video 2</a></td>
+                <td><a href="https://www.youtube.com/embed/HZTcTWvgXX4" target="contenido">Video 3</a></td>
+                <td><a href="https://www.youtube.com/embed/E9vGDvB5UYw" target="contenido">Video 4</a></td>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">
+                        <!-- <img src="https://www.uco.edu.co/SiteAssets/logo-uco.png" frameborder="0" title="UCO"></img> -->
+                        <iframe name="contenido" width="424" height="215"
+                            src="https://www.youtube.com/embed/uiFZUfmFAus" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
+    <!-- que diferencia hay este iframe con la etiqueta video que existe para mostrar videos -->
+</body>
+
+</html>
