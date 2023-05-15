@@ -15,9 +15,31 @@
             color: white;
         }
     </style>
+    <script src="./script.js"></script>
 </head>
 
 <body>
+    <table>
+
+        <tr>
+            <th><button type="button" id="11" onclick="colocarValor(this)">&nbsp;</button></th>
+            <th><button type="button" id="12" onclick="colocarValor(this)">&nbsp;</button></th>
+            <th><button type="button" id="13" onclick="colocarValor(this)">&nbsp;</button></th>
+
+        </tr>
+        <tr>
+            <th><button type="button" id="21" onclick="colocarValor(this)">&nbsp;</button></th>
+            <th><button type="button" id="22" onclick="colocarValor(this)">&nbsp;</button></th>
+            <th><button type="button" id="23" onclick="colocarValor(this)">&nbsp;</button></th>
+
+        </tr>
+        <tr>
+            <th><button type="button" id="31" onclick="colocarValor(this)">&nbsp;</button></th>
+            <th><button type="button" id="32" onclick="colocarValor(this)">&nbsp;</button></th>
+            <th><button type="button" id="33" onclick="colocarValor(this)">&nbsp;</button></th>
+
+        </tr>
+    </table>
     <form>
         <fieldset>
             <legend>INFORMACION PERSONAL</legend>
@@ -115,42 +137,62 @@
             </table>
         </fieldset>
         <br>
-        <fieldset>
-            <legend>GUSTOS MUSICALES</legend>
-            <table border="1">
-                <tr>
-                    <th><label for="gustosMusicales">Gustos musicales</label></th>
-                    <td>
-                        <select id="gustosMusicales" multiple>
-                            <option value="0" selected="select">Seleccione una opcion</option>
-                            <option value="1">Pop</option>
-                            <option value="2">Rock</option>
-                            <option value="3">Instrumental</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>PRESENTACION PERSONAL</legend>
-            <table colspan="5" border="1">
-                <tr>
-                    <th><label for="videoPersona">Video Presentacion</label></th>
-                    <td><input id="videoPersona" type="file"></td>
-                </tr>
+        <!-- <form>
+            <fieldset>
+                <legend>GUSTOS MUSICALES</legend>
+                <table border="1">
+                    <tr>
+                        <th><label for="gustosMusicales">Gustos musicales</label></th>
+                        <td>
+                            <select id="gustosMusicales" multiple>
+                                <option value="0" selected="select">Seleccione una opcion</option>
+                                <option value="1">Pop</option>
+                                <option value="2">Rock</option>
+                                <option value="3">Instrumental</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+        </form> -->
 
-                <tr>
-                    <th><label for="perfilPersona">Perfil:</label></th>
-                    <td><textarea tabindex="2" id="perfilPersona" cols="50" rows="10"></textarea></td>
-                </tr>
+        <form>
+            <fieldset>
+                <legend>
+                    <marquee>
+                        PRESENTACION PERSONAL
+                    </marquee>
+                </legend>
 
-            </table>
-
-
-        </fieldset>
-
+                <table border="1">
+                    <tr>
+                        <th><label for="gustosMusicales">Gustos musicales</label></th>
+                        <td>
+                            <select id="gustosMusicales" multiple>
+                                <option value="0" selected="select">Seleccione una opcion</option>
+                                <option value="1">Pop</option>
+                                <option value="2">Rock</option>
+                                <option value="3">Instrumental</option>
+                            </select>
+                        </td>
+                        <th><label for="videoPersona">Video Presentacion</label></th>
+                        <td><input id="videoPersona" type="file"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="perfilPersona">Perfil:</label></th>
+                        <td colspan="3"><textarea tabindex="2" id="perfilPersona" cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            <input type="reset" value="limpiar Presentacion">
+                        </th>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
         <input type="reset" value="Limpiar todo">
+
     </form>
 
     <fieldset>
